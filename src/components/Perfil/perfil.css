@@ -1,0 +1,40 @@
+.img-perfil {
+    margin-top: 0;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    transform: skewY(-1deg); 
+}
+.body-card {
+    margin-top: -20%;
+    z-index: 1;
+}
+.text-card ul {
+    list-style-type: none;
+}
+.icono-perfil {
+    font-size: 20px;
+     background-color: #ff69ed;
+     color: #000;
+     padding: 1rem;
+     border-radius: 50%;
+     margin: 5% -7% ;
+}
+.icono-star {
+    font-size: 15px;
+    color: #ff69ed;
+}
+.icono-linea {
+    color: rgba(197, 194, 194, 0.815);
+}
+.text-card li {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+  }
+.custom-btn {
+    border: none;
+    padding: 0.8em;
+    background-color: #ff69ed;
+    color: #000;
+    border-radius: 10px;
+    margin: 0 20%;
+}
