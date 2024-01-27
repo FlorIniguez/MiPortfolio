@@ -1,8 +1,11 @@
 import React from "react";
 import "./info.css";
+import Contacto from "../Formulario/Formulario";
+import Formulario from '../Contacto/Contacto'
+
 const Info = () => {
   return (
-    <div className="container mt-5 info-mia">
+    <div className="container-fluid mt-5 info-mia">
       <div className="mt-4 container">
         <h5 className="titulo-info">Hola Mundo</h5>
         <p>
@@ -21,7 +24,7 @@ const Info = () => {
         </p>
       </div>
       <div className="mt-4 container educacion">
-        <h5 className="titulo-info">Resumen </h5>
+        <h5 className="titulo-info">Formación</h5>
         <div className=" mt-3">
           <ul className="list-unstyled mt-1 mb-0 mx-2">
             <i className="fa-solid fa-user-graduate icono-educacion mt-3"></i>
@@ -30,21 +33,29 @@ const Info = () => {
             </li>
             <li className="d-flex align-items-center">
               <i className="fa-solid fa-star icono-star"></i>
+              <span className="fw-bold mx-2">Back-end Java</span>
+            </li>
+            <li className="d-flex align-items-center">
+              <i className="fa-solid fa-grip-lines-vertical icono-linea mx-1"></i>
+              <span className="mx-2">01/2024 - Actualidad</span>
+            </li>
+            <li className="d-flex align-items-center">
+              <i className="fa-solid fa-star icono-star"></i>
               <span className="fw-bold mx-2">Full Stack Java</span>
             </li>
             <li className="d-flex align-items-center">
               <i className="fa-solid fa-grip-lines-vertical icono-linea mx-1"></i>
-               <span className="mx-2">08/2023 - Actualidad</span>
+              <span className="mx-2">08/2023 - 12/2023</span>
             </li>
             <li className="d-flex align-items-center">
               <i className="fa-solid fa-star icono-star"></i>
               <span className="fw-bold mx-2">
-                Diplomatura Desarrollo Web Full Stack 
+                Diplomatura Desarrollo Web Full Stack
               </span>
             </li>
             <li className="d-flex align-items-center">
               <i className="fa-solid fa-grip-lines-vertical icono-linea mx-1"></i>
-             <span className="mx-2"> 2022 - 2023</span>
+              <span className="mx-2"> 2022 - 2023</span>
             </li>
             <li className="d-flex align-items-center">
               <i className="fa-solid fa-star icono-star"></i>
@@ -59,10 +70,20 @@ const Info = () => {
           </ul>
         </div>
       </div>
-    
-      <div className="mt-4 container">
-        <h5 className="titulo-info"> Contacto </h5>
-    
+
+      <div className="container-contactos mt-4">
+
+      <div className="mt-5 formu">
+        <h5 className="titulo-info"> Contactame! </h5>
+          <Contacto/>
+        </div>
+
+        <div className="mt-5">
+        <h5 className="titulo-info"> Info Contacto </h5>
+        <Formulario/>
+        </div>
+       
+
       </div>
     </div>
   );

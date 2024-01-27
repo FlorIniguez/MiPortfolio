@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Navbar1 />
-    <div className="container d-flex justfy-content-evenly">
-      <CardPerfil />
-      <Info/>
+      <div className="container d-flex justfy-content-evenly align-items-baseline">
+        <CardPerfil/>
+        <Info />
       </div>
     </>
   );
